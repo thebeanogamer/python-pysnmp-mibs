@@ -1,0 +1,3 @@
+*.rpm
+rpmbuild
+python-pysnmp-mibs
