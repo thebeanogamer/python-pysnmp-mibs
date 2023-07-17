@@ -1,8 +1,13 @@
+ifndef spec
+spec=python-pysnmp-mibs.spec
+endif
+
+
 tar:
-	spectool -g -R python-pysnmp-mibs.spec
+	spectool -g -R $(spec)
 
 srpm: tar
-	rpmbuild -bs --define "_topdir `pwd`/rpmbuild" python-pysnmp-mibs.spec
+	rpmbuild -bs --define "_topdir `pwd`/rpmbuild" $(spec)
 ifdef outdir
 	cp ./rpmbuild/SRPMS/* $(outdir)
 endif
