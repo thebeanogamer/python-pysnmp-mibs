@@ -12,7 +12,6 @@ Source0:        %{pypi_source %{pypi_name}}
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
-BuildRequires:  python3dist(setuptools)
 
 
 %global _description %{expand:
