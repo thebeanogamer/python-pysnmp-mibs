@@ -9,7 +9,7 @@ Summary:        PySNMP MIBs
 
 License:        BSD-2-Clause
 URL:            https://github.com/etingof/pysnmp-mibs
-Source0:        %{pypi_source}
+Source0:        %{pypi_source %{pypi_name}}
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
